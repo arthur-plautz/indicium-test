@@ -14,7 +14,7 @@ Tendo as tecnologias acima instaladas, navegue até o diretório onde estão os 
 O programa irá aguardar a entrada de dados para o formato de saída, e para o mês referente à representatividade por setor, para a segunda saída requerida no documento de explanação do desafio técnico.
 
 A primeira entrada de dados deve ser uma string:
-  - "Documento": Para receber os arquivos no formato CSV em três arquivos distintos;
+  - "Documento": Para receber os arquivos no formato CSV em quatro arquivos distintos, sendo dois oficiais, e dois de subdivisão;
   - "Objeto": Para visualizar a saída de dados referentes às consultas solicitadas;
 
 A segunda entrada de dados deve ser um número, referente ao mês para a filtragem dos resultados por setor.
