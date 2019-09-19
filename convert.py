@@ -36,7 +36,6 @@ def merge_csv(name, docs, fields):
                 for line1 in reader1:
                     line = {fields[0][0]: line1[fields[1][0]],fields[0][1]: line1[fields[1][1]]}
                     writer.writerow(line)
-                writer.writerow({fields[0][0]: '', fields[0][1]: ''})
                 writer.writerow({fields[0][0]:fields[1][2], fields[0][1]:fields[1][3]})
                 for line2 in reader2:
                     line = {fields[0][0]: line2[fields[1][2]],fields[0][1]: line2[fields[1][3]]}
