@@ -30,7 +30,7 @@ def merge_csv(name, docs, fields):
         reader1 = csv.DictReader(csvfile1)
         with open(docs[1],'r',encoding='utf8') as csvfile2:
             reader2 = csv.DictReader(csvfile2)
-            with open('docs/' + name + '.tsv','w',newline='',encoding='utf8') as csvfile:
+            with open('docs/' + name + '.csv','w',newline='',encoding='utf8') as csvfile:
                 writer = csv.DictWriter(csvfile, fieldnames=fields[0])
                 writer.writerow({fields[0][0]:fields[1][0], fields[0][1]:fields[1][1]})
                 for line1 in reader1:
