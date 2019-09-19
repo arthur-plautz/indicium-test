@@ -27,6 +27,11 @@ while(x != 0):
     elif(output_format == 'DOCUMENTO'):
         cv.py_to_tsv(output1[0], 'valor_contato', ['contato','valorTotal'])
         cv.py_to_tsv(output1[1], 'valor_mes', ['mes','valorTotal'])
+        fields = [
+            ['titulo','valor'],
+            ['contato','valorTotal','mes','valorTotal']
+        ]
+        cv.merge_csv('output_valor_contato_mes',['docs/output_valor_contato.csv','docs/output_valor_mes.csv'],fields)
         cv.py_to_tsv(output2, 'valor_setor', ['id','setor','representacao'])
         print('Os documentos podem ser encontrados no diretório "docs"')
         x = 0
